@@ -1,5 +1,18 @@
 $(document).ready(function() {
 
+	$(".mc_toggle").click(function(){
+		var Obj = $(this).parent().parent();
+
+		Obj.children(".mc_item").append('<div class="mc_item_wrap_af"></div>');
+		$(".mc_item_wrap_af").fadeIn();
+		
+		Obj.children("ul").slideToggle(function(){
+			// Obj.children(".mc_item").append('<div class="mc_item_wrap_af"></div>');
+			// $(".mc_item_wrap_af").fadeIn();
+		});
+	});
+
+
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {
 		ga("send", "event", "goal", "goal");

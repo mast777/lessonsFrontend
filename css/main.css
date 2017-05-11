@@ -245,3 +245,155 @@ header .button {
 	font-family: "RobotoCondensedRegular";
 }
 
+.main_cats {
+	background-color: #191919;
+	padding: 20px 0 32px;
+}
+
+.main_cats h2 {
+	text-transform: uppercase;
+	color: #c9c9c9;
+	font-family: "BebasRegular";
+	font-size: 40px;
+	text-align: center;
+}
+
+.main_cats h2 strong {
+	color: #fff;
+}
+.main_cats h2 span {
+	color: #d12f22;
+}
+
+section h2 {
+	position: relative;
+}
+.s_black h2::before {
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 20px;
+	background-image: url(../img/header_img.png);
+	top: 19px;
+	margin-left: -68px;
+}
+.s_black h2::after {
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 20px;
+	background-image: url(../img/header_img.png);
+	background-position: -50px 0;
+	top: 20px;
+	margin-left: 20px;
+}
+
+.mc_wrap {
+	padding: 0;
+	text-align: center;
+	position: relative;
+}
+
+.mc_item_wrap {
+	margin-left: 30px;
+	width: 160px;
+	display: inline-block;
+	text-align: center;
+}
+.mc_item_wrap:first-child {
+	margin-left: 0;
+}
+.mc_item {
+	border: 1px solid #353535;
+	border-radius: 2px;
+}
+
+.mc_item a {
+	color:#fff;
+}
+.mc_item h4 {
+	font-weight: normal;
+	font-family: "BebasBold";
+	font-size: 20px;
+	margin: 0 0 7px;
+}
+.mc_item h4:hover,
+.mc_item_wrap.active h4 {
+	text-decoration: underline;
+}
+.mc_item_wrap.active,
+.mc_item_wrap:hover {
+	background-color: #2A2A2A;
+}
+.mc_item span{
+	height: 85px;
+	width: 130px;
+	background-image: url(../img/cats_iconset.png);
+	display: block;
+	margin: 15px auto 5px;
+}
+.mc_item_wrap:nth-child(1) span {
+	background-position: 12px center;
+}
+.mc_item_wrap:nth-child(2) span {
+	background-position: -122px center;
+}
+.mc_item_wrap:nth-child(3) span {
+	background-position: -262px center;
+}
+.mc_item_wrap:nth-child(4) span {
+	background-position: -393px center;
+}
+.mc_item_wrap:nth-child(5) span {
+	background-position: -528px center;
+}
+.mc_item_wrap:nth-child(6) span {
+	background-position: -662px center;
+}
+
+.mc_toggle {
+	background-color: #212121;
+	height: 25px;
+	background-image: url(../img/mc_ar.png);
+	background-repeat: no-repeat;
+	background-position: 75px center;
+	cursor: pointer;
+}
+.mc_item_wrap.active .mc_toggle,
+.mc_item_wrap:hover .mc_toggle {
+	background-color: #353535;
+	background-position: -115px center;
+}
+.mc_item_wrap.active > ul {
+	background-color: #353535;
+	position: absolute;
+	width: 100%;
+	list-style: none;
+	padding: 15px 0;
+	margin:25px 0;
+	font-family: "BebasRegular";
+	font-size: 20px;
+	text-align: center;
+	z-index: 10;
+	display: none;
+}
+.mc_item_wrap.active > ul li {
+	margin:0 10px;
+	display: inline-block;
+}
+.mc_item_wrap.active > ul li a {
+	color: #fff;
+	text-decoration: underline;
+}
+.mc_item_wrap.active > ul li a:hover {
+	text-decoration: none;
+}
+.mc_item_wrap_af {
+	background-image: url(../img/mc_c_arr.png);
+	content: "";
+	height: 9px;
+	width: 18px;
+	position: absolute;
+	margin: 17px 71px;
+	display: none;
+}
