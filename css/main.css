@@ -364,7 +364,7 @@ section h2 {
 	background-color: #353535;
 	background-position: -115px center;
 }
-.mc_item_wrap.active > ul {
+.mc_item_wrap > ul {
 	background-color: #353535;
 	position: absolute;
 	width: 100%;
@@ -376,6 +376,7 @@ section h2 {
 	text-align: center;
 	z-index: 10;
 	display: none;
+	left: 0;
 }
 .mc_item_wrap.active > ul li {
 	margin:0 10px;
@@ -394,6 +395,6 @@ section h2 {
 	height: 9px;
 	width: 18px;
 	position: absolute;
-	margin: 17px 71px;
+	margin: 17px 72px;
 	display: none;
 }
