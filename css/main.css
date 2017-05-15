@@ -143,7 +143,9 @@ header h1 {
 	line-height: 50px;
 	padding: 0 25px;
 	font-size: 20px;
+	font-family: "BebasBold";
 	border-bottom: 4px solid #AC160A;
+	color: #fff;
 }
 .button:hover {
 	background-color: #e64437;
@@ -247,10 +249,11 @@ header .button {
 
 .main_cats {
 	background-color: #191919;
-	padding: 20px 0 32px;
+	padding: 20px 0 40px;
 }
 
-.main_cats h2 {
+.main_cats h2,
+.art_header {
 	text-transform: uppercase;
 	color: #c9c9c9;
 	font-family: "BebasRegular";
@@ -265,7 +268,8 @@ header .button {
 	color: #d12f22;
 }
 
-section h2 {
+section h2,
+article h2 {
 	position: relative;
 }
 .s_black h2::before {
@@ -397,4 +401,57 @@ section h2 {
 	position: absolute;
 	margin: 17px 72px;
 	display: none;
+}
+
+.mc_button_w {
+	text-align: center;
+	margin-top: 30px;
+}
+
+article.content {
+	background-color: #E9E9E9;
+}
+article .art_header::before {
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 20px;
+	background-image: url(../img/art_header_img.png);
+	top: 19px;
+	margin-left: -68px;
+}
+article .art_header::after {
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 20px;
+	background-image: url(../img/art_header_img.png);
+	background-position: -50px 0;
+	top: 20px;
+	margin-left: 20px;
+}
+article .art_header {
+	color: #050505;
+	margin-bottom: 20px;
+}
+p.h_descr {
+	max-width: 790px;
+	text-align: center;
+	margin: 0 auto;
+}
+.home_items {
+	background-color: #D6D6D6;
+	padding: 40px 0;
+	margin-top: 40px;
+}
+
+.hi_item {
+	color: #050505;
+	text-align: center;
+	font-size: 14px;
+	margin-bottom: 50px;
+}
+.hi_item img {
+	max-width: 100%;
+	border-top: 8px solid #AC160A;
 }
