@@ -455,3 +455,51 @@ p.h_descr {
 	max-width: 100%;
 	border-top: 8px solid #AC160A;
 }
+.s_bottom img {
+	max-width: 90%;
+	position: absolute;
+	bottom: 0;
+}
+.s_bottom {
+	padding-top: 32px;
+}
+.sb_header.button_cont {
+	text-align: right;
+}
+.sb_header h2 {
+	text-transform: uppercase;
+	font-family: "BebasRegular";
+	font-size: 36px;
+	margin: 0;
+}
+.sb_content {
+	margin-top: 30px;
+}
+.sb_content p {
+	margin-bottom: 0;
+	padding-bottom: 10px;
+}
+footer {
+	background-color: #2A2A2A;
+	color: #fff;
+	padding: 28px 0 35px;
+	font-family: "BebasBold";
+	font-size: 20px;
+}
+
+footer a {
+	color: #fff;
+	text-decoration: underline;
+}
+footer a:hover {
+	text-decoration: none;
+}
+footer ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+footer ul li {
+	padding: 0 10px;
+	float: left;
+}
